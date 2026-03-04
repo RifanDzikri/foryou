@@ -100,3 +100,40 @@ h1 { font-family: 'Dancing Script', cursive; font-size: 3rem; }
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
 }
+/* ========================= */
+/* RESPONSIVE MOBILE FIX */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    min-height: auto; /* biar gak maksa tinggi layar */
+    padding: 40px 20px;
+  }
+
+  .slider {
+    flex-direction: column; /* foto jadi turun ke bawah */
+    align-items: center;
+  }
+
+  .photo {
+    width: 90%;
+    height: auto;
+  }
+
+  .letter-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .music-control {
+    top: 10px;
+    right: 10px;
+    font-size: 0.7rem;
+  }
+
+}
