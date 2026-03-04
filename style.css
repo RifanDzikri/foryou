@@ -42,7 +42,7 @@ button {
 
 /* Sections */
 section {
-    min-height: 100vh;
+    padding: 80px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
