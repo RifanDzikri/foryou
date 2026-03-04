@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Adeee cayang</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+        <source src="foto/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="password-screen" class="overlay">
+        <div class="content">
+            <h2>For You ❤️</h2>
+            <p>Masukkan nama lengkap pacalll kamu!!! (Format: huruf kecil)</p>
+            <input type="password" id="passInput" placeholder="Masukkan kode...">
+            <button onclick="checkPassword()">Buka Pesan</button>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <section class="hero">
+            <div class="music-control" onclick="toggleMusic()">🎵 Play/Pause</div>
+            <h1 class="animate-text">Selamat Ulang Tahun, Cantik ✨</h1>
+            <p class="fade-in">Scroll pelan-pelan ya...</p>
+        </section>
+
+        <section class="gallery">
+            <h3>Foto adeee (harusnya ada foto kita fotbar)</h3>
+            <div class="slider">
+                <img src="foto/kiri.jpeg" alt="Foto 1" class="photo">
+                <img src="foto/tengah.jpeg" alt="Foto 2" class="photo">
+                <img src="foto/kanan.jpeg" alt="Foto 3" class="photo">
+            </div>
+        </section>
+
+        <section class="love-letter">
+            <div class="letter-card">
+                <h3>Untuk Kamu,</h3>
+                <p>Hari ini bukan sekadar hari biasa. Ini adalah hari di mana dunia menjadi lebih
+                     indah karena kehadiranmu.Semoga di umur yang baru ini kamu lebih bahagia, 
+                     lebih tenang, dan semua hal baik pelan-pelan datang ke kamu. 
+                     Aku harap setiap langkah yang kamu ambil selalu dimudahkan, 
+                     dan setiap mimpi yang kamu simpan bisa jadi kenyataan....</p>
+                <p>Selamat ulang tahun yaa, hari ini mungkin menurut kamu cuman bertambah satu angka,
+                    tapi buat aku, hari ini adalah hari lahirnya orang yang paling
+                    berarti dalam hidupku.</p>
+                <p><strong>Penuh cinta, Rifan Dzikri Fathulhuda.</strong></p>
+            </div>
+        </section>
+
+        <section class="footer">
+            <p>Sudah selesai...</p>
+            <button class="btn-love" onclick="makeConfetti()">Klik kalau kamu sayang aku ❤️</button>
+            <canvas id="confetti-canvas"></canvas>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

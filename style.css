@@ -1,0 +1,102 @@
+:root {
+    --pink-soft: #ffdde1;
+    --pink-dark: #ee9ca7;
+    --text-color: #4a4a4a;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background: linear-gradient(to bottom, var(--pink-soft), var(--pink-dark));
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+.hidden { display: none; }
+
+/* Overlay Password */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: white;
+    display: flex; justify-content: center; align-items: center;
+    z-index: 1000;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    background: var(--pink-dark);
+    color: white;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 { font-family: 'Dancing Script', cursive; font-size: 3rem; }
+
+/* Gallery */
+.slider {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    width: 90%;
+    padding: 20px;
+}
+
+.photo {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Love Letter */
+.letter-card {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 500px;
+    line-height: 1.6;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.music-control {
+    position: fixed;
+    top: 20px; right: 20px;
+    background: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Animasi sederhana */
+.animate-text {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
